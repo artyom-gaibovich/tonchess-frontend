@@ -9,13 +9,13 @@ import AuthModal from "@/components/auth/AuthModal";
 import ContextProvider from "@/context/ContextProvider";
 
 export const metadata = {
-  title: "chessu",
+  title: "TON Chess",
   description: "Play Chess online.",
   openGraph: {
-    title: "chessu",
+    title: "TON Chess",
     description: "Play Chess online.",
-    url: "https://ches.su",
-    siteName: "chessu",
+    url: "https://ton-chess",
+    siteName: "TON chess",
     locale: "en_US",
     type: "website"
   },
