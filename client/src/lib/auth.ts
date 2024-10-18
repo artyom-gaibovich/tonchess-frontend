@@ -20,7 +20,7 @@ export const setGuestSession = async (name: string) => {
     try {
         const res = await fetch(`${API_URL}/v1/auth/guest`, {
             method: "POST",
-            credentials: "include",
+            credentials: "omit",
             headers: {
                 "Content-Type": "application/json"
             },
