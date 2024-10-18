@@ -39,8 +39,11 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className="overflow-x-hidden">
-      <body className="overflow-x-hidden">
-        <ContextProvider>
+    <head>
+      <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    </head>
+    <body className="overflow-x-hidden">
+    <ContextProvider>
           <Header />
 
           <main className="mx-1 flex min-h-[70vh] justify-center md:mx-16 lg:mx-40">
@@ -53,6 +56,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Footer />
 
         {/* next/script issue: https://github.com/vercel/next.js/issues/43402 */}
+
         <script
           id="load-theme"
           dangerouslySetInnerHTML={{
